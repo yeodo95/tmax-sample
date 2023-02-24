@@ -1,0 +1,594 @@
+@charset "utf-8";
+  
+/*#container.main{clear:both;position:relative;width:100%;padding:0;margin:0 auto;background:url(/images/main/bg_line_new.gif ) repeat-x 0 0}*/
+#container.main{clear:both;position:relative;width:100%;margin: -68px auto 0;padding: 67px 0 0;background: url(../images/main/bg_line_new.gif ) repeat-x 0 -33px}
+.main .mainCnts{clear:both;position:relative;width:1000px;padding:0;margin:0 auto 0}
+.main .mainCnts_b{clear:both;position:relative;width:100%;height:126px;padding:0;background:url(/images/footer/bult.gif) repeat 0 0}
+.main .mainCnts h3{display:block;width:100%;height:25px;padding:0;margin:0 0 30px;background:url(../images/main/main_h3.png) no-repeat;font-size:0;line-height:0;text-indent:-9999px}
+.main .mainCnts h3.cyber{height:41px;background:url(/images/main/main_h3_new.png) no-repeat 97% 0}/* 사이버창구 */
+.main .mainCnts h3.happynum{background-position:0 -30px}/* 행복넘버 */
+.main .mainCnts h3.news{background-position:0 -90px}/* 새소식 */
+.main .mainCnts h3.qna{background-position:0 -120px}/* FAQ */
+.main .mainCnts h4{font:bold 23px/1.4 "Nanum Gothic","나눔고딕",돋움,Dotum,Tahoma,AppleGothic,sans-serif}
+.main .mainCnts h4 a:hover,.main .mainCnts h4 a:link,.main .mainCnts h4 a:visited{text-decoration:none}
+.main .mainCnts .h3_desc{display:block;width:100%;height:35px;margin:0;background:url(/images/main/main_h3_desc.png) no-repeat;font-size:0;line-height:0;text-indent:-9999px}
+.main .mainCnts .h3_desc.cyber{background-position:10px 0}/* 사이버창구 */
+.main .mainCnts .h3_desc.happynum{height:20px;background-position:0 -35px}/* 수련원 */
+
+/* 메인 상단 */
+.mainCnts .cntsLft{overflow:hidden;position:relative;width:100%}
+
+/* 사이버창구 */
+.mainCnts .cntsLft .cyberBank{float:left;display:inline-block;width:100%;height:135px;padding:0 0;margin:30px 0 15px}
+.mainCnts .cntsLft .cyberBank ul{display:inline-block;float:left;overflow:hidden;width:100%;margin:7px 0 0 0}
+.mainCnts .cntsLft .cyberBank li{float:left;width:125px;padding:0;text-align:center}
+.mainCnts .cntsLft .cyberBank li a{display:block;height:20px;padding:60px 0 0 0;background:url(../images/main/btn_cyberbank_new.png?ver=20220303) no-repeat;font:bold 1.250em/1.4 "Nanum Gothic","나눔고딕",돋움,Dotum,Tahoma,AppleGothic,sans-serif;text-decoration:none}
+.mainCnts .cntsLft .cyberBank .btn01 a{background-position:-10px 0}/* 계약조회 */
+.mainCnts .cntsLft .cyberBank .btn02 a{background-position:-135px 0}/* 보험료납입 */
+.mainCnts .cntsLft .cyberBank .btn03 a{background-position:-255px 0}/* 보험계약대출 */
+.mainCnts .cntsLft .cyberBank .btn04 a{background-position:-375px 0}/* 보험금신청 */
+.mainCnts .cntsLft .cyberBank .btn05 a{background-position:-490px 0}/* 증명서 */
+.mainCnts .cntsLft .cyberBank .btn06 a{background-position:-605px 0}/* 휴면 */
+.mainCnts .cntsLft .cyberBank .btn07 a{background-position:-730px 0}/* 약관 */
+.mainCnts .cntsLft .cyberBank .btn08 a{background-position:-840px 0}/* 영업점 */
+
+.mainCnts .cntsLft .cyberBank li:hover a{padding-bottom:10px;border-bottom:4px solid #006ebc;color:#006ebc}
+
+/*아이콘*/
+.quick_link{float:left;width:667px;margin-top:25px}
+.quick_link li{float:left;width:111px;padding:0;text-align:center}
+.quick_link li a{display:block;padding:52px 0 0 0;background:url(/images/main/btn_quick_link.png) no-repeat;font:normal 1.167em/1.4 "Nanum Gothic","나눔고딕",돋움,Dotum,Tahoma,AppleGothic,sans-serif;color:#fff;text-decoration:none}
+
+.quick_link li:hover{background:url(/images/main/btn_quick_link.png) no-repeat 0 -99px}
+.quick_link li.q02:hover{background:url(/images/main/btn_quick_link.png) no-repeat -111px -99px}
+.quick_link li.q03:hover{background:url(/images/main/btn_quick_link.png) no-repeat -222px -99px}
+.quick_link li.q04:hover{background:url(/images/main/btn_quick_link.png) no-repeat -333px -99px}
+.quick_link li.q05:hover{background:url(/images/main/btn_quick_link.png) no-repeat -444px -99px}
+.quick_link li.q06:hover{background:url(/images/main/btn_quick_link.png) no-repeat -555px -99px}
+.quick_link li:hover a{font-weight:bold}
+
+.quick_link li.q01 a{background-position:0 0}/* 금융소비자보호 */
+.quick_link li.q02 a{background-position:-111px 0}/* 금융정보포털파인 */
+.quick_link li.q03 a{background-position:-222px 0}/* 안전금융거래 */
+.quick_link li.q04 a{background-position:-333px 0}/* 약관 */
+.quick_link li.q05 a{background-position:-444px 0}/* 휴먼보험금 */
+.quick_link li.q06 a{background-position:-555px 0}/* 영업점 */
+
+/* 롤링배너 */
+.mainCnts .mdGoods{float:right;display:inline-block;position:relative;width:100%;height:420px;padding:0;margin:0;background:#d5ecfa}
+/* .mainCnts .mdGoods{float:right;display:inline-block;position:relative;width:333px;height:324px;margin:0} */
+.mainCnts .mdGoods h3{display:none;visibility:hidden}/* 롤링배너 */
+
+/* .mdGoods{height:420px} */
+.product_box{position:relative;width:1000px;margin:0 auto}
+.product_box .button{position:absolute;bottom:10px;right:2px;z-index:100}
+.product_box .button li{float:left;padding-left:2px}
+.product_box .banner_box {overflow:hidden;width:100%;margin-top:0}
+.product_box .banner_list{height:320px;overflow:hidden;position:relative}
+.product_box .banner_list li{position:absolute;left:0;top:0;width:1000px;/*background:#daf8fe;*/z-index:3}
+
+
+
+.item_box{display:inline-block;position:relative;float:left;width:445px;height:199px;margin:0 0 0 0}
+.item_box .button2{position:absolute;top:-35px;right:20px;z-index:100}
+.item_box .button2 li{float:left;padding-left:2px}
+.item_box .item_list {overflow:hidden;width:445px;margin-top:0}
+.item_box .item_rolling{height:199px;overflow:hidden;position:relative}
+.item_box .item_rolling li{position:absolute;left:0;top:0;width:445px;height:199px;z-index:3}
+
+/*신규 롤링*/
+/* #mdGoods {position:relative;overflow:hidden;width:100%;height:420px}
+#mdGoods .cnt li{margin:0 auto}
+#mdGoods .cnt > li{position:absolute;top:0;width:100%;height:420px;text-align:center;font-size:30px;line-height:300px;color:#fff}
+#mdGoods .btn > button {position:absolute;top:50%;transform: translateY(-50%);border:0;padding:5px;background-color:#fff;z-index:5}
+#mdGoods .btn .prev{left:5px}
+#mdGoods .btn .next {right:5px}
+#mdGoods .auto > button {position:absolute;bottom:0;right:10px;width:15px;height:15px;background:none;border:0;z-index:100;font-size:0}
+#mdGoods .auto > button.play:before{content:"";display:inline-block;width:0;height:0;vertical-align:top;border-top:7px solid transparent;border-bottom:7px solid transparent;border-left:12px solid #333}
+#mdGoods .auto > button.stop:before{content:"";display:inline-block;width:3px;height:12px;background:#333}
+#mdGoods .auto > button.stop:after{content: "";display:inline-block;width:3px;height:12px;margin:0 0 0 3px;background:#333}
+#mdGoods .indiArea{position:absolute;left:50%;bottom:10px;z-index:1000}
+#mdGoods .indi{transform: translateX(-50%);z-index: 100}
+#mdGoods .indi:after {content: "";display: block;clear: both}
+#mdGoods .indi > li{float:left;margin-left:5px;width:10px;height:10px;background-color:none;border:2px solid #333;border-radius: 50%;cursor:pointer;opacity:0.5}
+#mdGoods .indi > li.on{background-color:#333;opacity:1}
+#mdGoods .indi > li a{display:block;width:10px;height:10px}
+#mdGoods .indi > li:first-child {margin-left:0} */
+
+/*신규 롤링*/
+#mdGoods {position:relative;overflow:hidden;width:100%;height:320px}
+#mdGoods .cnt li{margin:0 auto}
+#mdGoods .cnt > li{position:absolute;top:0;width:100%;height:320px;text-align:center;font-size:30px;line-height:300px;color:#fff}
+#mdGoods .btn > button {position:absolute;top:50%;transform: translateY(-50%);border:0;padding:5px;background-color:#fff;z-index:5}
+#mdGoods .btn .prev{left:5px}
+#mdGoods .btn .next {right:5px}
+#mdGoods .auto > button {position:absolute;bottom:0;left:-20px;width:15px;height:15px;background:none;border:0;z-index:100;font-size:0}
+#mdGoods .auto > button.play:before{content:"";display:inline-block;width:0;height:0;vertical-align:top;border-top:7px solid transparent;border-bottom:7px solid transparent;border-left:12px solid #333}
+#mdGoods .auto > button.stop:before{content:"";display:inline-block;width:3px;height:12px;background:#333}
+#mdGoods .auto > button.stop:after{content: "";display:inline-block;width:3px;height:12px;margin:0 0 0 3px;background:#333}
+#mdGoods .indiArea{position:absolute;left:50%;bottom:10px;z-index:100}
+#mdGoods .indi{/* transform: translateX(-50%);z-index: 100 */}
+#mdGoods .auto{margin-left:40px}
+#mdGoods .indi:after {content: "";display: block;clear: both}
+#mdGoods .indi > li{float:left;margin-left:5px;width:10px;height:10px;background-color:none;border:2px solid #333;border-radius: 50%;cursor:pointer;opacity:0.5}
+#mdGoods .indi > li.on{background-color:#333;opacity:1}
+#mdGoods .indi > li a{display:block;width:10px;height:10px}
+#mdGoods .indi > li:first-child {margin-left:0}
+
+
+
+/* .product_box2{display:inline-block;float:left;width:100%;height:130px;margin:5px 0 0 0}
+.product_box2 h3{padding-top:3px}
+.product_box2 .button2{position:absolute;top:421px;right:21px}
+.product_box2 .button2 li{float:left;padding-left:2px}
+.product_box2 .banner_box {overflow:hidden;width:195px;margin-top:7px}
+.product_box2 .brand_rolling{height:130px;overflow:hidden;position:relative}
+.product_box2 .brand_rolling li{position:absolute;left:0;top:0;width:195px;height:130px;z-index:3} */
+
+/* 메인 중간영역 */
+.mainCnts .cntsMid{overflow:hidden;position:relative;width:100%;margin-bottom:35px}
+.mainCnts .cntsMid .newitemlist{width:100%;margin-bottom:50px}
+
+.mainCnts .cntsMid .newitemlist ul{overflow:hidden;position:relative;background:url(../images/main/itemList_bg.gif ) no-repeat 0 0}
+.mainCnts .cntsMid .newitemlist li{position:relative;float:left;width:230px;height:240px;padding:40px 10px;text-align:center;font:bold 15px/15px "Nanum Gothic","나눔고딕",돋움,Dotum,Tahoma,AppleGothic,sans-serif;}
+.mainCnts .cntsMid .newitemlist li a{height:200px;background:url(../images/main/newproduct.png?ver=20220401) no-repeat center 80px}
+.mainCnts .cntsMid .newitemlist li a,.mainCnts .cntsMid .newitemlist li span{display:block}
+.mainCnts .cntsMid .newitemlist li a em{display:block;font-size:21px;line-height:24px}
+.mainCnts .cntsMid .newitemlist li a:hover{text-decoration:none}
+.mainCnts .cntsMid .newitemlist li span{padding:5px}
+.mainCnts .cntsMid .newitemlist li span.btn{position:absolute;left:65px;bottom:40px;width:80px;margin:20px auto 0;padding:10px 20px;background:#fff;border:1px solid #ccc;border-top-right-radius:8px;border-bottom-left-radius:8px}
+.mainCnts .cntsMid .newitemlist li:hover,.mainCnts .cntsMid .newitemlist li.on{background:url(/images/main/itemList_bg_over.gif ) no-repeat 0 0}
+.mainCnts .cntsMid .newitemlist li:hover span.btn{background:#006ebc;color:#fff;border:1px solid #006ebc}
+.mainCnts .cntsMid .newitemlist .btnArrow{position:absolute;right:0;top:0}
+.mainCnts .cntsMid .newitemlist li.i02 a{background-position:center -220px}
+.mainCnts .cntsMid .newitemlist li.i03 a{background-position:center -510px}
+.mainCnts .cntsMid .newitemlist li.i04 a{background-position:center -800px}
+
+.mainCnts .cntsMid .bdArea{overflow:hidden;position:relative;width:100%;margin-bottom:50px}
+.mainCnts .cntsMid .customer{float:left;width:345px;height:540px;padding:40px 25px;color:#fff;font:bold 1.250em/1.8 "Nanum Gothic","나눔고딕",돋움,Dotum,Tahoma,AppleGothic,sans-serif}
+.mainCnts .cntsMid .customer dt{height:34px;background:url(../images/main/cscenter.png) no-repeat -22px -22px;font-size:0;line-height:0;text-indent:-99999px}
+.mainCnts .cntsMid .customer dd{position:relative;padding:25px 0 30px;border-top:1px solid #fff}
+.mainCnts .cntsMid .customer dd.tel{padding-top:0;border-top:none}
+.mainCnts .cntsMid .customer dd.tel strong{display:block;height:40px;background:url(../images/main/cscenter.png) no-repeat -22px -57px;font-size:0;line-height:0;text-indent:-99999px}
+.mainCnts .cntsMid .customer dd ul{margin-top:5px}
+.mainCnts .cntsMid .customer dd ul li strong{display:inline-block;width:160px;height:10px;padding-top:15px;background:url(../images/main/cscenter.png) no-repeat -22px -154px;font-size:0;line-height:0;text-indent:-99999px}
+.mainCnts .cntsMid .customer dd ul li:first-child strong{background-position:-22px -120px}
+.mainCnts .cntsMid .customer dd.last{padding-bottom:0}
+.mainCnts .cntsMid .customer dd.last ul li strong{background-position:-22px -222px}
+.mainCnts .cntsMid .customer dd.cs strong{display:inline-block;width:160px;height:10px;padding-top:15px;background:url(../images/main/cscenter.png?ver=20220429) no-repeat -22px -187px;font-size:0;line-height:0;text-indent:-99999px}
+.mainCnts .cntsMid .customer dd .arstbn{display:inline-block;margin-left:5px}
+.mainCnts .cntsMid .customer dd .arstbn a{display:block;padding:5px 10px;background:#fff;color:#006ebc;font-size:13px;;border-top-right-radius:8px;border-bottom-left-radius:8px;border:1px solid #fff}
+.mainCnts .cntsMid .customer dd .arstbn a:hover,.mainCnts .cntsMid .customer dd .arstbn a:visited,.mainCnts .cntsMid .customer dd .arstbn a:link{text-decoration:none}
+.mainCnts .cntsMid .customer dd span{display:inline-block;font-size:14px}
+.mainCnts .cntsMid .customer dd span .qrcode{position:absolute;bottom: 0;left:-89px;width:89px;height:97px;background:url(/images/main/qrcode.gif ) no-repeat 0 0}
+
+.mainCnts .cntsMid .happyNumber{overflow:hidden;float:left;width:525px;height:550px;padding:35px 40px;background:url(../images/main/serBg.gif ) no-repeat 0 0;font:bold 1.250em/1.4 "Nanum Gothic","나눔고딕",돋움,Dotum,Tahoma,AppleGothic,sans-serif}
+.mainCnts .cntsMid .happyNumber .h01{width:100%;height:275px}
+.mainCnts .cntsMid .happyNumber .h01 h4 span{font-size:17px}
+.mainCnts .cntsMid .happyNumber .h01 h4 a{color:#434343}
+.mainCnts .cntsMid .happyNumber .h02{float:left;width:100%}
+.mainCnts .cntsMid .happyNumber .h01,.mainCnts .cntsMid .happyNumber .h02{}
+.mainCnts .cntsMid .banners{display:block;position:absolute;bottom:0;width:333px;height:119px;text-align:center}
+*+html body .mainCnts .cntsMid .banners{right:0}
+.mainCnts .cntsMid .banners img{padding:0}
+.mainCnts .cntsMid .banners a{display:block}
+.mainCnts .cntsMid .newitemlist h3,.mainCnts .cntsMid .happyNumber h3{display:block;width:100%;height:30px;padding:0;margin:0 0 30px;background:none;font:bold 30px/30px "Nanum Gothic","나눔고딕",돋움,Dotum,Tahoma,AppleGothic,sans-serif;color:#1b1b1b;text-indent:0}
+.mainCnts .cntsMid .happyNumber h3 a{display:block;height:35px}
+
+/* 신상품롤링 */
+/* .mainCnts .cntsMid .newitemlist .bx-viewport{margin-left:-22px}
+.mainCnts .cntsMid .newitemlist .bx-viewport li{width:199px!important}
+ */
+
+/*신상품*/
+.mainCnts .cntsMid .newitemlist p{float:left;width:199px;height:195px;margin-top:4px;margin-right:23px;background:#f5f5f5}
+/* .mainCnts .cntsMid .newitemlist li:first-child{margin-left:0}
+.mainCnts .cntsMid .newitemlist li.blue{background:#c5eafb}
+ */
+.mainCnts .cntsMid .newitemlist p:hover{width:195px;height:195px;background:url(/images/footer/bult.gif) no-repeat 0 0;border:2px solid #999}
+/* .mainCnts .cntsMid .newitemlist li.blue:hover{background:#d6f0fc;border:2px solid #00a8ec} */
+.mainCnts .cntsMid .newitemlist p:hover span{padding:6px 5px 8px 3px;background:#666}
+.mainCnts .cntsMid .newitemlist p:hover a{font-weight:bold}
+/* .mainCnts .cntsMid .newitemlist p.elife:hover span{background:#a7a7a7} */
+
+
+
+.mainCnts .cntsMid .newitemlist p span{display:inline-block;padding:8px 5px;background:#818181;font:normal 11px/1.2 "Nanum Gothic","나눔고딕",돋움,Dotum,Tahoma,AppleGothic,sans-serif;color:#fff}
+.mainCnts .cntsMid .newitemlist p a{display:block;margin-top:5px;padding:110px 10px 10px;background:url(/images/main/item.png) no-repeat center 0;font:normal 1.083em/1.3 "Nanum Gothic","나눔고딕",돋움,Dotum,Tahoma,AppleGothic,sans-serif;text-align:center;text-decoration:none} /*농사랑*/
+/* .mainCnts .cntsMid .newitemlist i.i02 a{background-position:center -147px}걱정없는 장기보험 */
+.mainCnts .cntsMid .newitemlist p.i03 a{background-position:center -290px}/*프리미엄저축보험*/
+/* .mainCnts .cntsMid .newitemlist li:hover a{background:url(/images/main/item_over.gif) no-repeat center 0}
+.mainCnts .cntsMid .newitemlist li:hover.i02 a{background-position:center -147px}
+.mainCnts .cntsMid .newitemlist li:hover.i03 a{background-position:center -300px}
+ */
+
+/* NH농협수련원& 프리미엄서비스 */
+.mainCnts .cntsMid .happyNumber .h01 h3{background-position: 0 -98px}/*수련원*/
+.mainCnts .cntsMid .happyNumber .h02 h3{background-position: 0 -136px}/*프리미엄서비스*/
+
+/*NH농협수련원*/
+.mainCnts .cntsMid .happyNumber .h01 ul{overflow:hidden;width:100%;margin:17px 0 5px 0}
+.mainCnts .cntsMid .happyNumber .h01 li{margin:0 0 5px 0}
+.mainCnts .cntsMid .happyNumber .h01 li a{display:block;width:100%;text-decoration:none}
+.mainCnts .cntsMid .happyNumber .h02 ul{overflow:hidden;width:100%;margin:0}
+.mainCnts .cntsMid .happyNumber .h02 li{float:left;width:262px;height:205px;padding-top:35px}
+.mainCnts .cntsMid .happyNumber .h02 li.n01{width:222px;padding-left:40px}
+.mainCnts .cntsMid .happyNumber .h02 li a{display:block;width:100%;text-align:left;text-decoration:none}
+.mainCnts .cntsMid .happyNumber .h02 li a strong{display:block;margin-bottom:10px;font-size:23px}
+
+/*프리미엄서비스*/
+.mainCnts .cntsRgt .happyNumber li a{display:block;width:69px;padding:0 0 2px;color:#434343;text-align:left;text-decoration:none;line-height:1.3}
+.mainCnts .cntsRgt .happyNumber .tp_btn a{display:inline-block;width:95px;height:36px;background:url(/images/main/tp_btn.gif) no-repeat}
+.mainCnts .cntsRgt .happyNumber .tp_btn a.btn02{margin-left:8px;width:102px;background-position:-103px 0}
+
+/* 새소식&자주묻는질문 */
+.main .mainCnts h3.newNotice{height:30px;background:none;font:bold 30px/30px "Nanum Gothic","나눔고딕",돋움,Dotum,Tahoma,AppleGothic,sans-serif;color:#1b1b1b;text-indent:0}
+.mainCnts .cntsMid .m_notice,.mainCnts .cntsMid .m_faq{display:inline-block;float:left;position:relative;width:438px;height:125px;padding:35px 30px;border:1px solid #ccc}
+.mainCnts .cntsMid .m_notice{border-right:none}
+.main .mainCnts .cntsMid .m_notice h3,.main .mainCnts .cntsMid .m_faq h3{width:215px;margin:0}
+.mainCnts .cntsMid .bdllist{float:left;width:215px}
+.mainCnts .cntsMid .bdllist li{float:left;width:215px;height:20px}
+.mainCnts .cntsMid .bdllist li {display:block;float:left;overflow:hidden;width:407px;padding:2px 0;text-decoration:none;white-space:nowrap;word-break:break-all;text-overflow:ellipsis;font:normal 1.333em/1.6 "Nanum Gothic","나눔고딕",돋움,Dotum,Tahoma,AppleGothic,sans-serif}
+.mainCnts .cntsMid .bdllist li a.import{width:180px;padding:1px 0 0 19px;background:url(/images/common/icon_new3.png) no-repeat 2px 4px}
+*+html body .mainCnts .cntsMid .bdllist li a.import{white-space:normal}
+.mainCnts .cntsMid .more{position:absolute;top:40px;left:213px}
+.mainCnts .cntsMid .m_notice .more{left:100px}
+.mainCnts .cntsMid .more a{display:block;float:left;font-size:23px}
+.mainCnts .cntsMid .more a:hover,.mainCnts .cntsMid .more a:visited,.mainCnts .cntsMid .more a:link{text-decoration:none}
+
+/* 메인 하단 */
+.mainCnts_b .cntsRgt{position:relative;width:1000px;height:126px;margin:0 auto}
+
+/*20.06 고객센터*/
+.main .mainCnts h3.newService{height:30px;background:none;font:bold 30px/30px "Nanum Gothic","나눔고딕",돋움,Dotum,Tahoma,AppleGothic,sans-serif;color:#1b1b1b;text-indent:0}
+.main .mainCnts .cntsRgt{position:relative;float:left;background:url(../images/main/ball_bg.png) no-repeat 0 43px}
+/* 고객센터 */
+.mainCnts_b .cntsRgt .customer{float:left;display:inline-block;position:relative;width:667px;height:126px;padding:0;margin:0;background:url(/images/main/bg_custom.png) no-repeat left 10px}
+.mainCnts_b .cntsRgt .customer:hover{background-position:left -180px}
+.mainCnts_b .cntsRgt .customer h3{clear:both;position:absolute;/* visibility:hidden; */overflow:hidden;left:0;top:0;width:0;height:0;margin:0;padding:0;background:none;font-size:0;line-height:0;text-indent:-99999px}
+.mainCnts_b .cntsRgt .customer *{font-size:0;line-height:0;text-indent:-9999px}
+.mainCnts_b .cntsRgt .customer dl{display:inline-block;float:left;width:100%;height:126px;background:url(/images/main/img_custom_new.png) no-repeat 97px 7px}
+.mainCnts_b .cntsRgt .customer:hover dl{background:url(/images/main/img_custom_new_over.png) no-repeat 97px 7px}
+.mainCnts_b .cntsRgt .customer .ars{position:absolute;top:64px;right:132px;width:88px;height:22px}
+.mainCnts_b .cntsRgt .customer .ars a{display:block;width:88px;height:22px;background:url(/images/main/btn_ars_c.gif) no-repeat right top}
+
+/* 보험금 신청조회 */
+.mainCnts_b .cntsRgt .insuMoneyLink{position:absolute;right:0;top:17px;width:333px;;padding:0;margin:0 0 13px}
+.mainCnts_b .cntsRgt .insuMoneyLink li{width:auto;height:42px}
+.mainCnts_b .cntsRgt .insuMoneyLink li a{display:block;width:100%;height:42px;background:url(/images/main/btn_insuMoney.png) no-repeat 0 0;font-size:0;line-height:0;text-indent:-9999px}
+.mainCnts_b .cntsRgt .insuMoneyLink li:first-child a{width:100%;height:42px;background-position:0 0} /* 안전금융거래 */
+.mainCnts_b .cntsRgt .insuMoneyLink li a{background-position:0 -43px} /* 사회공헌  */
+
+/* 서비스중지안내 */
+.noticeMain{display:block;position:fixed;_position:absolute;top:0;left:0;width:100%;height:100%;background:#fff;z-index:10000}
+.noticeMain .imgArea{position:absolute;top:50%;left:50%;width:510px;margin:-207px 0 0 -380px;padding:0;background:#fff;white-space:normal}
+
+/*레이어 팝업 - XP */
+.drop_notice{margin-top:5px}
+.drop_notice .inner{overflow:hidden;position:relative;margin:0 auto;padding:25px 0;height:110px;background:url(/images/main/drop_noticeBg.gif) no-repeat 0 0}
+.drop_notice .inner .noticeZone{float:left;width:390px;margin:0 0 0 15px;padding:0 25px 0 90px;background:url(/images/main/drop_notice_img.png) no-repeat 0 28px}
+.drop_notice .inner dt{margin-bottom:7px;height:18px;background:url(/images/main/drop_notice_title.png) no-repeat 0 0;font-size:0;text-indent:-9999px}
+.drop_notice .inner dd{margin-bottom:8px;line-height:1.4}
+.drop_notice .inner .more{width:150px;height:13px;background:url(/images/main/drop_notice_Link.png) no-repeat 0 0;font-size:0;text-indent:-9999px}
+.drop_notice .inner .more a{display:block;width:100%;height:13px}
+
+/*레이어 두번째내용 - 사이버 사기*/
+.drop_notice .inner .noticeZone.n02{width:350px;background-position:0 -117px}
+.drop_notice .inner .noticeZone.n02 dt{background-position:0 -40px}
+.drop_notice .inner .noticeZone.n02 .more{background-position:0 -38px}
+
+/*레이어세번째내용 - 세월호(왼쪽) */
+.drop_notice .inner .noticeZone.n03{margin-top:10px;width:390px;height:100px;background-position:0 -285px}
+.drop_notice .inner .noticeZone.n03 dt{height:30px;background-position:0 -80px}
+.drop_notice .inner .noticeZone.n03 dd{height:50px;background:url(/images/main/notice_txt.gif) no-repeat 10px 0;font-size:0;text-indent:-9999px}
+.drop_notice .inner .noticeZone.n03 p{width:150px;height:13px;background:url(/images/main/drop_notice_Link.png) no-repeat 0 -76px;font-size:0;text-indent:-9999px}
+
+/*레이어4번째내용 - 페이지 평가등급 공시(오른쪽&왼쪽)*/
+.drop_notice .inner .noticeZone.n04{width:450px;height:100px;margin-top:5px;padding-left:10px;/* background-position:0 -400px */background:none}
+/* .drop_notice .inner .noticeZone.n04 dt{margin-bottom:5px;height:37px;background-position:0 -135px} */
+.drop_notice .inner .noticeZone.n04 dt{margin:5px 0 15px 0;height:48px;background-position:0 -135px}
+.drop_notice .inner .noticeZone.n04 dd{margin-bottom:5px;padding-left:20px}
+.drop_notice .inner .noticeZone.n04 p{width:150px;height:13px;background:url(/images/main/drop_notice_Link.png) no-repeat 0 -114px;font-size:0;text-indent:-9999px}
+
+/*레이어5번째내용 - 우리투자증권 새가족(왼쪽)*/
+.drop_notice .inner .noticeZone.n05{margin:-20px 0 0 0;padding-left:0;width:475px;height:154px;background-position:0 -520px}
+.drop_notice .inner .noticeZone.n05 dt{margin:22px 0 5px;height:37px;background-position:0 -210px}
+.drop_notice .inner .noticeZone.n05 dd{margin-bottom:0;height:36px;background:url(/images/main/drop_notice_title.png) no-repeat 0 -252px}
+.drop_notice .inner .noticeZone.n05 p{width:auto;height:13px;margin-top:7px;background:url(/images/main/drop_notice_Link.png) no-repeat 360px -114px;font-size:0;text-indent:-9999px}
+
+/*레이어2-6번째내용 - 모바일 New Harmony(오른쪽) */
+.drop_notice .inner .noticeZone.n06{margin-top:-19px;padding-top:25px;width:350px;height:98px;background-position:0 -679px}
+.drop_notice .inner .noticeZone.n06 dt{height:22px;background-position:0 -310px}
+.drop_notice .inner .noticeZone.n06 dd{margin-bottom:10px}
+.drop_notice .inner .noticeZone.n06 .more{background-position:-20px -114px}
+
+/*레이어2-7번째내용 - 인터넷 신용대출(오른쪽) */
+.drop_notice .inner .noticeZone.n07{width:350px;height:98px;background-position:0 -825px}
+.drop_notice .inner .noticeZone.n07 dt{height:36px;background-position:0 -359px}
+.drop_notice .inner .noticeZone.n07 dd{margin-bottom:10px}
+.drop_notice .inner .noticeZone.n07 .more{background-position:-20px -114px}
+
+/*레이어2-7번째내용 - 인터넷 신용대출(왼쪽) */
+.drop_notice .inner .noticeZone.n07.left{width:340px;margin: 0 0 0 35px;padding:0 25px 0 100px}
+
+/*레이어 8번째내용 - 모바일이벤트2(왼쪽)*/
+.drop_notice .inner .noticeZone.n08{width:360px;padding:3px 0 35px 125px;background-position:0 -929px}
+.drop_notice .inner .noticeZone.n08 dt{height:28px;margin-bottom:5px;background-position:0 -410px}
+.drop_notice .inner .noticeZone.n08 .more{background-position:-20px -114px}
+
+/*레이어9번째내용 - 2014국민행복나눔!김장축제(오른쪽) */
+.drop_notice .inner .noticeZone.n09{width:440px;height:98px;padding-left:10px;background-position:100% -1050px}
+.drop_notice .inner .noticeZone.n09 dt{height:36px;background-position:0 -448px}
+.drop_notice .inner .noticeZone.n09 dd{margin-bottom:10px}
+.drop_notice .inner .noticeZone.n09 .more{background-position:-20px -114px}
+
+/*레이어10번째내용 - ccm 인증획득(왼쪽) 201501*/ 
+.drop_notice .inner .noticeZone.n10{width:360px;height:105px;margin:3px 0 0 20px;padding-left:95px;background:url(/images/main/drop_notice_img02.png) no-repeat 0 0}
+.drop_notice .inner .noticeZone.n10 dt{height:82px;background-position:0 -500px}
+.drop_notice .inner .noticeZone.n10 dd{margin-bottom:10px}
+.drop_notice .inner .noticeZone.n10 .more{background-position:-20px -114px}
+
+/*레이어 11번째내용 - 실손의료보험 통원의료비 간소화 시행안내*/
+.drop_notice .inner .noticeZone.n11{width:355px;height:105px;margin:3px 0 0 40px;padding-left:80px;background:url(/images/main/drop_notice_img02.png) no-repeat 0 -130px}
+.drop_notice .inner .noticeZone.n11 dt{height:24px;margin-bottom:5px;background-position:0 -590px}
+.drop_notice .inner .noticeZone.n11 .more{background-position:-20px -114px}
+
+/*레이어12번째내용 - 연말정산(오른쪽) */
+.drop_notice .inner .noticeZone.n12{width:350px;height:98px;background:url(/images/main/drop_notice_img02.png) no-repeat 0 -230px}
+.drop_notice .inner .noticeZone.n12 dt{height:33px;background-position:0 -619px}
+.drop_notice .inner .noticeZone.n12 dd{margin-bottom:10px}
+.drop_notice .inner .noticeZone.n12 .more{background-position:-20px -114px}
+
+/*레이어13번째내용 - 내맘같이NH유니버셜종신보험 무배당출시기념 모바일 큰잔치(왼쪽) */
+.drop_notice .inner .noticeZone.n13{width:360px;height:105px;margin:5px 0 0 40px;padding-left:75px;background-position:0 -1172px}
+.drop_notice .inner .noticeZone.n13 dt{height:36px;background-position:0 -654px}
+.drop_notice .inner .noticeZone.n13 dd{margin-bottom:10px}
+.drop_notice .inner .noticeZone.n13 .more{background-position:-20px -114px}
+
+/*레이어14번째내용 - 우리아빠바로알기(오른쪽) */
+.drop_notice .inner .noticeZone.n14{width:465px;height:98px;margin:-10px 0 0 25px;padding:18px 0 0 0;background:url(/images/main/drop_notice_img02.png) no-repeat 89% -345px}
+.drop_notice .inner .noticeZone.n14 dt{height:25px;background-position:0 -704px}
+.drop_notice .inner .noticeZone.n14 dd{margin-bottom:10px}
+.drop_notice .inner .noticeZone.n14 .more{background-position:-20px -114px}
+
+/*레이어15번째내용 - 직장인 보험고객을 위한 인터넷대출 출시(오른쪽) */
+.drop_notice .inner .noticeZone.n15{width:420px;height:98px;margin-top:-5px;padding:0 25px 0 20px;background-position:130% -1305px}
+.drop_notice .inner .noticeZone.n15{width:420px;height:98px;margin-top:-2px;padding:0 25px 0 20px;background:url(/images/main/drop_notice_img02.png) no-repeat 90% -865px}
+.drop_notice .inner .noticeZone.n15 dt{margin-top:3px;height:36px;background-position:0 -754px}
+.drop_notice .inner .noticeZone.n15 dd{margin-bottom:10px}
+.drop_notice .inner .noticeZone.n15 .more{background-position:-20px -114px}
+
+/*레이어16번째내용 - 보험계약대출 신규 고객을 위한 상품권 증정 이벤트(오른쪽) */
+.drop_notice .inner .noticeZone.n16{width:375px;height:98px;margin-top:-5px;padding:0 0 0 90px;background-position:0 -820px}
+.drop_notice .inner .noticeZone.n16 dt{height:36px;background-position:0 -804px}
+.drop_notice .inner .noticeZone.n16 dd{margin-bottom:10px}
+.drop_notice .inner .noticeZone.n16 .more{background-position:-20px -114px}
+
+/*레이어17번째내용 - 카카오이모콘티무료지급(왼쪽) */
+.drop_notice .inner .noticeZone.n17{width:435px;height:110px;margin:3px 0 0 40px;padding-left:0;background:url(/images/main/drop_notice_img02.png) no-repeat 90% -500px}
+.drop_notice .inner .noticeZone.n17 dt{height:76px;background-position:0 -854px}
+.drop_notice .inner .noticeZone.n17 dd{margin-bottom:10px}
+.drop_notice .inner .noticeZone.n17 .more{background-position:-20px -114px}
+
+/*레이어18번째내용 - 평생친구어린이보험 이벤트(왼쪽) */
+.drop_notice .inner .noticeZone.n18{width:435px;height:110px;margin:3px 0 0 40px;padding-left:0;background:url(/images/main/drop_notice_img02.png) no-repeat 90% -634px}
+.drop_notice .inner .noticeZone.n18 dt{height:80px;background-position:0 -940px}
+.drop_notice .inner .noticeZone.n18 dd{margin-bottom:10px}
+.drop_notice .inner .noticeZone.n18 .more{background-position:-20px -114px}
+
+/*레이어19번째내용 - window10(왼쪽) */
+.drop_notice .inner .noticeZone.n19{width:340px;margin: 0 0 0 35px;padding:11px 25px 0 100px;background:url(/images/main/drop_notice_img.png) no-repeat 0 -1407px}
+.drop_notice .inner .noticeZone.n19 dt{height:21px;background-position:0 -1035px}
+.drop_notice .inner .noticeZone.n19 dd{margin-bottom:10px}
+.drop_notice .inner .noticeZone.n19 .more{background-position:-20px -114px}
+
+/*레이어20번째내용 - 모바일 행복자산 캠페인!(왼쪽) */
+.drop_notice .inner .noticeZone.n20{width:460px;height:110px;margin:3px 0 0 40px;padding:0;background:url(/images/main/drop_notice_img02.png) no-repeat 92% -760px}
+.drop_notice .inner .noticeZone.n20 dt{height:76px;margin-bottom:5px;background-position:0 -1062px}
+.drop_notice .inner .noticeZone.n20 dd{margin-bottom:10px}
+.drop_notice .inner .noticeZone.n20 .more{background-position:-20px -114px}
+
+/*레이어21번째내용 - NH농협생명 브랜드 마케팅 공모전(왼쪽) */
+.drop_notice .inner .noticeZone.n21{width:460px;height:110px;margin:3px 0 0 40px;padding:10px 0 0 0;background:url(/images/main/drop_notice_img02.png) no-repeat 97% -980px}
+.drop_notice .inner .noticeZone.n21 dt{height:46px;margin-bottom:5px;background-position:0 -1152px}
+.drop_notice .inner .noticeZone.n21 dd{margin-bottom:10px}
+.drop_notice .inner .noticeZone.n21 .more{background-position:-20px -114px}
+
+/*레이어22번째내용 - 서비스 품질우수기업 인증 획득(왼쪽&오른쪽)*/
+.drop_notice .inner .noticeZone.n22{width:350px;height:100px;margin-top:12px;padding-left:110px;background-position:0 -1526px}
+.drop_notice .inner .noticeZone.n22 dt{margin-bottom:5px;height:46px;background-position:0 -1234px} 
+.drop_notice .inner .noticeZone.n22 dd{margin-bottom:5px}
+.drop_notice .inner .noticeZone.n22 p{background-position:-20px -114px}
+
+/*레이어23번째내용 - 소비자중심경영(CCM) 인증기업  NH농협생명 2015.12(왼쪽)*/
+.drop_notice .inner .noticeZone.n23{width:350px;height:100px;margin-top:12px;padding-left:110px;background-position:0 -1660px}
+.drop_notice .inner .noticeZone.n23 dt{margin-bottom:5px;height:21px;background-position:0 -1316px} 
+.drop_notice .inner .noticeZone.n22 dd{margin-bottom:5px}
+.drop_notice .inner .noticeZone.n23 p{background-position:-20px -114px}
+
+
+/*레이어24번째내용 - 카카오이모콘티무료지급(왼쪽)  20151216(왼쪽)*/
+.drop_notice .inner .noticeZone.n24{width:435px;height:110px;margin:-3px 0 0 40px;padding-left:0;background:url(/images/main/drop_notice_img02.png) no-repeat 95% -1085px}/*크리스마스*/
+.drop_notice .inner .noticeZone.n24{background:url(/images/main/drop_notice_img02.png) no-repeat 95% -1322px}/*새해맞이*/
+.drop_notice .inner .noticeZone.n24 dt{height:66px;margin-bottom:0;background-position:0 -1380px}
+.drop_notice .inner .noticeZone.n24 dd{margin-bottom:6px}
+.drop_notice .inner .noticeZone.n24 .more{background-position:-20px -114px}
+
+
+/*레이어25번째내용 - 고객확인제도(오른쪽)  20151221*/
+.drop_notice .inner .noticeZone.n25{width:335px;height:110px;margin:13px 0 0 50px;padding-left:90px;background:url(/images/main/drop_notice_img02.png) no-repeat 0 -1217px}
+.drop_notice .inner .noticeZone.n25 dt{height:32px;margin-bottom:0;background-position:0 -1459px}
+.drop_notice .inner .noticeZone.n25 dd{margin-bottom:6px}
+.drop_notice .inner .noticeZone.n25 .more{background-position:-20px -114px}
+
+/*레이어26번째내용 - 금융거래 주소 일괄변경서비스(오른쪽)  20160112*/
+.drop_notice .inner .noticeZone.n26{width:440px;height:110px;margin:10px 0 0 35px;padding-left:0;background-position:right -1756px}
+.drop_notice .inner .noticeZone.n26 dt{height:60px;margin-top:4px;margin-bottom:0;background-position:0 -1542px}
+.drop_notice .inner .noticeZone.n26 dd{margin-bottom:10px}
+.drop_notice .inner .noticeZone.n26 .more{background-position:-20px -114px}
+
+/*레이어27번째내용 - 모바일이벤트(오른쪽)  20160215*/
+.drop_notice .inner .noticeZone.n27{width:452px;height:110px;margin:10px 0 0 23px;padding-left:0;background-position:100% -1864px}
+.drop_notice .inner .noticeZone.n27 dt{height:34px;margin-bottom:0;background-position:0 -1602px}
+.drop_notice .inner .noticeZone.n27 dd{margin-bottom:7px}
+.drop_notice .inner .noticeZone.n27 .more{background-position:-20px -114px}
+
+/*레이어28번째내용 - 고객패널(오른쪽)  20160401*/
+.drop_notice .inner .noticeZone.n28{width:452px;height:110px;margin:10px 0 0 23px;padding-left:0;background:url(/images/main/drop_notice_img02.png) no-repeat 85% -1466px}/*이미지*/
+.drop_notice .inner .noticeZone.n28 dt{height:52px;margin-bottom:0;background-position:0 -1648px}/*타이틀*/
+.drop_notice .inner .noticeZone.n28 dd{margin-bottom:7px}
+.drop_notice .inner .noticeZone.n28 .more{background-position:-20px -114px}
+.notice28{width:720px;height:1280px;background:url(/images/main/notice28.jpg) no-repeat 0 0;font-size:0;line-height:0;text-indent:-9999px}
+
+/*레이어29번째내용 - 잠자고 있는 고객님의 소중한 자산!(왼쪽)  20160513(왼쪽)*/
+.drop_notice .inner .noticeZone.n29{width:435px;height:110px;margin:0 0 0 40px;padding-top:5px;padding-left:0;background:url(/images/main/drop_notice_img02.png) no-repeat 95% -1605px}/*돋보기*/
+.drop_notice .inner .noticeZone.n29 dt{height:73px;margin-bottom:10px;background-position:0 -1703px}
+.drop_notice .inner .noticeZone.n29 dd{margin-bottom:6px}
+.drop_notice .inner .noticeZone.n29 .more{background-position:-20px -114px}
+
+/*레이어29-1번째내용 - 잠자고 있는 고객님의 소중한 자산!(왼쪽)  20160513(왼쪽)*/
+.drop_notice .inner .noticeZone.n29_1{width:435px;height:110px;margin:0 0 0 40px;padding-top:5px;padding-left:0;background:url(/images/main/drop_notice_img03.png) no-repeat -25px -620px}/*돋보기*/
+.drop_notice .inner .noticeZone.n29_1 dt{height:73px;margin-bottom:10px;background:url(/images/main/drop_notice_title02.png) no-repeat 0 -347px}
+.drop_notice .inner .noticeZone.n29_1 dd{margin-bottom:6px}
+.drop_notice .inner .noticeZone.n29_1 .more{background-position:-20px -114px}	
+
+/*레이어30번째내용 - 내맘같은 보험계약대출 이벤트(오른쪽)  20160523(오른쪽)*/
+.drop_notice .inner .noticeZone.n30{width:445px;height:110px;margin:0 0 0 30px;padding-top:5px;padding-left:0;background:url(/images/main/drop_notice_img02.png) no-repeat 95% -1750px}/*쿠폰*/
+.drop_notice .inner .noticeZone.n30 dt{height:45px;margin-bottom:0;background-position:0 -1776px}
+.drop_notice .inner .noticeZone.n30 dd{margin-bottom:6px}
+.drop_notice .inner .noticeZone.n30 .more{background-position:-20px -114px}
+
+/*레이어31번째내용 - 건강UP! 행복UP! 캠페인  20160620(오른쪽)*/
+.drop_notice .inner .noticeZone.n31{width:440px;height:110px;margin:0 0 0 35px;padding-top:0;padding-left:0;background:url(/images/main/drop_notice_img02.png) no-repeat 97% -1898px}
+.drop_notice .inner .noticeZone.n31 dt{height:50px;margin-bottom:0;background-position:0 -1835px}
+.drop_notice .inner .noticeZone.n31 dd{margin-bottom:6px}
+.drop_notice .inner .noticeZone.n31 .more{background-position:-20px -114px}
+
+/*레이어32번째내용 - 보험권 가계 주택담보대출 심사 선진화 방안 안내  20160627(오른쪽)*/
+.drop_notice .inner .noticeZone.n32{width:445px;height:110px;margin:-3px 0 0 30px;padding-top:0;padding-left:0;background:url(/images/main/drop_notice_img02.png) no-repeat 98% -2027px}
+.drop_notice .inner .noticeZone.n32 dt{height:48px;margin-bottom:0;background-position:0 -1885px}
+.drop_notice .inner .noticeZone.n32 dd{margin-bottom:6px}
+.drop_notice .inner .noticeZone.n32 .more{background-position:-20px -114px}
+
+/*레이어33번째내용 - 보험계약대출 안내(오른쪽)  20160725(오른쪽)*/
+.drop_notice .inner .noticeZone.n33{width:445px;height:110px;margin:0 0 0 30px;padding-top:0;padding-left:0;background:url(/images/main/drop_notice_img02.png) no-repeat 92% -2178px}
+.drop_notice .inner .noticeZone.n33 dt{height:76px;margin-bottom:10px;background-position:0 -1935px}
+.drop_notice .inner .noticeZone.n33 dd{margin-bottom:6px}
+.drop_notice .inner .noticeZone.n33 .more{background-position:-20px -114px}	
+
+/*레이어34번째내용 - NH농협생명과 함께하는 한가위 이벤트 20160901(왼쪽)*/
+.drop_notice .inner .noticeZone.n34{width:450px;height:110px;margin:5px 0 0 25px;padding-top:3px;padding-left:0;background:url(/images/main/drop_notice_img03.png) no-repeat 0 0}
+.drop_notice .inner .noticeZone.n34 dt{height:42px;margin-bottom:0;background:url(/images/main/drop_notice_title02.png) no-repeat 0 0}
+.drop_notice .inner .noticeZone.n34 dd{margin-bottom:6px}
+.drop_notice .inner .noticeZone.n34 .more{background-position:-20px -114px}
+
+/*레이어35번째내용 - 2016 농협보험 대학생 논문 공모전 20160927(왼쪽)*/
+.drop_notice .inner .noticeZone.n35{width:335px;height:110px;margin:5px 0 0 30px;padding-top:3px;padding-left:110px;background:url(/images/main/drop_notice_img03.png) no-repeat 0 -142px}
+.drop_notice .inner .noticeZone.n35 dt{height:36px;margin-bottom:0;background:url(/images/main/drop_notice_title02.png) no-repeat 0 -55px}
+.drop_notice .inner .noticeZone.n35 dd{margin-bottom:6px}
+.drop_notice .inner .noticeZone.n35 .more{background-position:-20px -114px}
+
+/*레이어36번째내용 - 2016년 신규직원 채용 안내 20161011 (오른쪽)*/
+.drop_notice .inner .noticeZone.n36{width:445px;height:110px;margin:0 0 0 30px;padding-top:10px;padding-left:0;background:url(/images/main/drop_notice_img03.png) no-repeat -10px -265px}
+.drop_notice .inner .noticeZone.n36 dt{height:45px;margin-bottom:3px;background:url(/images/main/drop_notice_title02.png) no-repeat 0 -135px}
+.drop_notice .inner .noticeZone.n36 dd{margin-bottom:8px}
+.drop_notice .inner .noticeZone.n36 .more{background-position:-20px -114px}
+
+/*레이어37번째내용 - 대출 약관 변경 및 신규 기준금리 도입 20161123 (오른쪽)*/
+.drop_notice .inner .noticeZone.n37{width:445px;height:110px;margin:0 0 0 30px;padding-top:5px;padding-left:0;background:url(/images/main/drop_notice_img03.png) no-repeat -20px -403px}
+.drop_notice .inner .noticeZone.n37 dt{height:38px;margin-bottom:3px;background:url(/images/main/drop_notice_title02.png) no-repeat 0 -201px}
+.drop_notice .inner .noticeZone.n37 dd{margin-bottom:8px}
+.drop_notice .inner .noticeZone.n37 .more{background-position:-20px -114px}	
+
+/*레이어37_1번째내용 - 대출 약관 변경 및 신규 기준금리 도입 20161123 (오른쪽)*/
+.drop_notice .inner .noticeZone.n37_1{width:445px;height:110px;margin:0 0 0 30px;padding-top:5px;padding-left:0;background:url(/images/main/drop_notice_img03.png) no-repeat -20px -735px}
+.drop_notice .inner .noticeZone.n37_1 dt{height:38px;margin-bottom:3px;background:url(/images/main/drop_notice_title02.png) no-repeat 0 -201px}
+.drop_notice .inner .noticeZone.n37_1 dd{margin-bottom:8px}
+.drop_notice .inner .noticeZone.n37_1 .more{background-position:-20px -114px}	
+
+/*레이어38번째내용 - "으랏차차!! 한국축산 힘내요!!" 2016.12.21 (왼쪽)*/
+.drop_notice .inner .noticeZone.n38{width:445px;height:110px;margin:0 0 0 30px;padding-top:5px;padding-left:0;background:url(/images/main/drop_notice_img03.png) no-repeat -10px -518px}
+.drop_notice .inner .noticeZone.n38 dt{height:35px;margin-bottom:3px;background:url(/images/main/drop_notice_title02.png) no-repeat 0 -276px}
+.drop_notice .inner .noticeZone.n38 dd{margin-bottom:8px}
+.drop_notice .inner .noticeZone.n38 .more{background-position:-20px -114px}	
+
+/*레이어39번째내용 - 농협계좌를 이용하는 금융거래 중단안내 20170120 (오른쪽)*/
+.drop_notice .inner .noticeZone.n39{width:445px;height:110px;margin:0 0 0 30px;padding-top:5px;padding-left:0;background:url(/images/main/drop_notice_img03.png) no-repeat -10px -846px}
+.drop_notice .inner .noticeZone.n39 dt{height:38px;margin-bottom:3px;background:url(/images/main/drop_notice_title02.png) no-repeat 0 -438px}
+.drop_notice .inner .noticeZone.n39 dd{margin-bottom:0}
+.drop_notice .inner .noticeZone.n39 dl{margin-bottom:5px}
+.drop_notice .inner .noticeZone.n39 .more{background-position:-20px -114px}
+
+/*레이어40번째내용 - "NH고객행복서비스 론칭이벤트 2017.03.06"  (왼쪽)*/
+.drop_notice .inner .noticeZone.n40{width:445px;height:110px;margin:0 0 0 30px;padding-top:5px;padding-left:0;background:url(/images/main/drop_notice_img03.png) no-repeat -10px -957px}
+.drop_notice .inner .noticeZone.n40 dt{height:38px;margin-bottom:3px;background:url(/images/main/drop_notice_title02.png) no-repeat 0 -500px}
+.drop_notice .inner .noticeZone.n40 dd{margin-bottom:0}
+.drop_notice .inner .noticeZone.n40 .more{background-position:-20px -114px}
+
+/*레이어41번째내용 - 보험계약대출 20170310 (오른쪽)*/
+.drop_notice .inner .noticeZone.n41{width:445px;height:110px;margin:0 0 0 30px;padding-top:5px;padding-left:0;background:url(/images/main/drop_notice_img03.png) no-repeat -10px -1088px}
+.drop_notice .inner .noticeZone.n41 dt{height:70px;margin-bottom:3px;background:url(/images/main/drop_notice_title02.png) no-repeat 0 -580px}
+.drop_notice .inner .noticeZone.n41 dd{margin-bottom:0}
+.drop_notice .inner .noticeZone.n41 dl{margin-bottom:5px}
+.drop_notice .inner .noticeZone.n41 .more{background-position:-20px -114px}
+
+/*레이어42번째내용 - 고객패널(왼쪽)  20170320*/
+.drop_notice .inner .noticeZone.n42{width:432px;height:110px;margin:10px 0 0 43px;padding-left:0;background:url(/images/main/drop_notice_img03.png) no-repeat -20px -1200px}/*이미지*/
+.drop_notice .inner .noticeZone.n42 dt{height:52px;margin-bottom:0;background:url(/images/main/drop_notice_title02.png) no-repeat 0 -650px}/*타이틀*/
+.drop_notice .inner .noticeZone.n42 dd{margin-bottom:7px}
+.drop_notice .inner .noticeZone.n42 .more{background-position:-20px -114px}
+
+/*레이어43번째내용 - 고객패널(왼쪽)  20170417*/
+.drop_notice .inner .noticeZone.n43{width:442px;height:110px;margin:5px 0 0 33px;padding-left:0;background:url(/images/main/drop_notice_img03.png) no-repeat -15px -1325px}/*이미지*/
+.drop_notice .inner .noticeZone.n43 dt{height:42px;margin-bottom:0;background:url(/images/main/drop_notice_title02.png) no-repeat 0 -705px}/*타이틀*/
+.drop_notice .inner .noticeZone.n43 dl dd{margin-bottom:0}
+.drop_notice .inner .noticeZone.n43 .more{background-position:-20px -114px}
+
+/*레이어44번째내용 - 보험계약대출이벤트(오른쪽)  20170525*/
+.drop_notice .inner .noticeZone.n44{width:442px;height:110px;margin:5px 0 0 33px;padding-left:0;background:url(/images/main/drop_notice_img03.png) no-repeat 0 -1466px}/*이미지*/
+.drop_notice .inner .noticeZone.n44 dt{height:52px;margin-bottom:5px;background:url(/images/main/drop_notice_title02.png) no-repeat 0 -744px}/*타이틀*/
+.drop_notice .inner .noticeZone.n44 dl{margin-bottom:8px}
+.drop_notice .inner .noticeZone.n44 .more{background-position:-20px -114px}
+
+/*레이어45번째내용 - 여름농촌(왼쪽)  201707*/
+.drop_notice .inner .noticeZone.n45{width:442px;height:110px;margin:10px 0 0 33px;padding-left:0;background:url(/images/main/drop_notice_img03.png) no-repeat -8px -1610px}/*이미지*/
+.drop_notice .inner .noticeZone.n45 dt{height:62px;margin-bottom:16px;background:url(/images/main/drop_notice_title02.png) no-repeat 0 -795px}/*타이틀*/
+.drop_notice .inner .noticeZone.n45 dl dd{margin-bottom:0}
+.drop_notice .inner .noticeZone.n45 .more{background-position:-20px -114px}
+
+/*레이어46번째내용 - 9월이벤트(왼쪽)  201709*/
+.drop_notice .inner .noticeZone.n46{width:442px;height:110px;margin:10px 0 0 33px;padding-left:0;background:url(/images/main/drop_notice_img03.png) no-repeat -8px -1754px}/*이미지*/
+.drop_notice .inner .noticeZone.n46 dt{height:40px;margin-top:5px;margin-bottom:7px;background:url(/images/main/drop_notice_title02.png) no-repeat 0 -849px}/*타이틀*/
+.drop_notice .inner .noticeZone.n46 dl dd{margin-bottom:12px}
+.drop_notice .inner .noticeZone.n46 .more{background-position:-20px -114px}
+
+#pop_wrapper .nhbank{background:url(/images/main/drop_notice_img03.png) no-repeat 200px -856px}
+
+/*레이어팝업 공통*/
+.drop_notice .w1000{overflow:hidden;position:relative;width:1000px}
+.drop_notice .cls_wrap{position:absolute;right:15px;bottom:15px}
+.drop_notice .layerClose{text-align:right}
+.drop_notice .layerClose a{display:inline-block;overflow:hidden;width:24px;height:24px;background:url(/images/popup/call_ars_close.gif) no-repeat 0 0;vertical-align:bottom;font-size:0;line-height:0;text-indent:-9999px}
+*+html body .drop_notice .layerClose a{vertical-align:middle}
+
+/* main content안에 들어가는 레이어 popup */
+.mainLayerPopup{float:left;position:absolute;left:0;top:10px;padding:10px;width:380px;height:468px;background:url(/images/main/mainCntsLayerpopup.png) no-repeat 0 0;z-index:1000}
+.mainLayerPopup dt{padding:23px 0 10px;height:282px;background:url(/images/main/1st.png) no-repeat center 20px;text-indent:-9999px}
+.mainLayerPopup dd{padding:0 15px}
+.mainLayerPopup a{display:inline-block;overflow:hidden;width:24px;height:24px;background:url(/images/popup/call_ars_close.gif) no-repeat 0 0;vertical-align:bottom;font-size:0;line-height:0;text-indent:-9999px}
+*+html body .mainLayerPopup a{vertical-align:middle}
+
+/*main top banner*/
+#mainlayer{background:url(/images/header/mainlayer.png) repeat-x 0 5px}
+#mainlayer .mainBanner{position:relative;margin:0 auto;width:1000px;height:118px;line-height:95px}
+#mainlayer .mainBanner ul{overflow:hidden}
+#mainlayer .mainBanner li{float:left;width:100%;height:118px;/* background:url(/images/main/moblie_qr.png) no-repeat 116px 15px */}
+/* #mainlayer .mainBanner li:first-child{background:url(/images/main/layerPopup03.png) no-repeat 0 0} */
+#mainlayer .mainBanner li a{display:block;height:108px;padding-top:10px;color:#fff;font:bold 1.167em/3.2 "Nanum Gothic","나눔고딕",돋움,Dotum,Tahoma,AppleGothic,sans-serif !important;text-align: center}
+#mainlayer .mainBanner li a:hover{text-decoration:none}
+#mainlayer .mainBanner li a span{display:inline;padding-bottom:2px;border-bottom:1px solid #fff}
+#mainlayer .mainBanner li a img{}
+#mainlayer .mainBanner .more{margin-right:150px;text-align:right}
+#mainlayer .mainBanner #mainclose{position:absolute;top:85px;right:0;width:150px}
+#mainlayer .mainBanner #mainclose a{float:right;display:inline-block;width:20px;height:23px;font-size:0;text-indent:-9999px;background:url(/images/main/mainclose_new.png) no-repeat center -4px}
+#mainlayer .mainBanner #mainclose label{display:inline-block;margin-top:-3px;font-family:"Nanum Gothic","나눔고딕",돋움,Dotum,Tahoma,AppleGothic,sans-serif}

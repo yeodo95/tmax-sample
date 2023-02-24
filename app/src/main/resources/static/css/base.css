@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal; 
+	font-weight: normal;
+	src: url(/fonts/NanumGothic.eot);
+	src: url(/fonts/NanumGothic.eot?#iefix) format('embedded-opentype'), url(/fonts/NanumGothic.woff) format('woff'), url(/fonts/NanumGothic.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal; 
+	font-weight: bold;
+	src: url(/fonts/NanumGothicBold.eot);
+	src: url(/fonts/NanumGothicBold.eot?#iefix) format('embedded-opentype'), url(/fonts/NanumGothicBold.woff) format('woff'), url(/fonts/NanumGothicBold.ttf) format('truetype');
+} 
+
+
+/* Default Setting */
+*{margin:0;padding:0}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font:normal 0.75em "돋움",Dotum,Tahoma,AppleGothic,sans-serif;line-height:1.65em;color:#686a6d;letter-spacing:0}
+input,select{font-family:"Nanum Gothic","나눔고딕",돋움,Dotum,Tahoma,AppleGothic,sans-serif}
+img,fieldset{border:0 none}
+ul,ol,li{list-style:outside none}
+table{border-collapse:collapse}
+textarea{resize:none}
+address,em{font-style:normal}
+p em{font-weight:bold}
+/* 키보드보안 오류로 인하여 object 제거 2013-09-03 */
+/* 원본
+caption,legend,hr,object{display:none}
+*/
+
+/* 수정 */
+
+
+object{float:left}
+caption,legend,hr{left:0;top:0;overflow:hidden;width:0;height:0;/* visibility:hidden; */font:0;line-height:0 !important}
+hr{visibility:hidden}
+label,button{cursor:pointer}
+form{width:100%}
+pre{font-size:1em;line-height:1.65em}
+.clr{clear:both !important}
+.tal{text-align:left !important}
+.tac{text-align:center !important}
+.tar{text-align:right !important}
+.vat{vertical-align:top !important}
+.vam{vertical-align:middle !important}
+.vab{vertical-align:bottom !important}
+.fl{float:left}
+.fr{float:right !important}
+.fn{float:none !important}
+a{color:#4f4f4f;text-decoration:none}
+a:hover,a:focus,a:active{color:#272727;text-decoration:underline;cursor:pointer !important}
+a.point{font-weight:bold;color:#0066cc}
+/* Input */
+input[type="text"],input[type="password"],input[type="email"],input[type="search"],input[type="image"],input[type="tel"],input[type="button"],textarea{}
+input:checked[type="checkbox"]{background:#fff}
+input,select,textarea,button{display:inline-block;font-size:1em;vertical-align:top}
+select{}
+button::-moz-focus-inner{border:0 none;padding:0;margin:0}
+/* Scroll */
+.scroll{overflow:hidden;overflow-y:scroll/*;scrollbar-face-color:#f2f2f2;scrollbar-shadow-color:#999;scrollbar-highlight-color:#999;scrollbar-3dlight-color:#fff;scrollbar-darkshadow-color:#fff;scrollbar-track-color:#f2f2f2;scrollbar-arrow-color:#999*/}
+*+html body .scroll{position:relative}
+.scrollX{overflow:hidden;overflow-x:scroll/*;scrollbar-face-color:#f2f2f2;scrollbar-shadow-color:#999;scrollbar-highlight-color:#999;scrollbar-3dlight-color:#fff;scrollbar-darkshadow-color:#fff;scrollbar-track-color:#f2f2f2;scrollbar-arrow-color:#999*/}
+*+html body .scrollX{position:relative}
+/* Hidden */
+.hide{clear:both;position:absolute;/* visibility:hidden; */overflow:hidden;left:-1000000px!important;top:-1000000px!important;width:0;height:0;margin:0;padding:0;background:none;font-size:0;line-height:0;text-indent:-99999px}
+*:first-child+html body .hide{clear:both;position:absolute;/* visibility:hidden; */overflow:hidden;left:-1000000px!important;top:-1000000px!important;width:0;height:0;margin:0;padding:0;background:none;text-indent:-99999px}
+
+.hide2{clear:both;position:absolute;visibility:hidden;overflow:hidden;left:0;top:0;width:0;height:0;margin:0;padding:0;background:none;font-size:0;line-height:0;text-indent:-99999px}
+*:first-child+html body .hide2{clear:both;position:absolute;visibility:hidden;overflow:hidden;left:0;top:0;width:0;height:0;margin:0;padding:0;background:none;text-indent:-99999px}
+
+.hide3{clear:both;position:absolute!important;visibility:hidden;overflow:hidden;left:0;top:0;width:0;height:0;margin:0;padding:0;background:none;font-size:0;line-height:0;text-indent:-99999px}
+*:first-child+html body .hide3{clear:both;position:absolute!important;visibility:hidden;overflow:hidden;left:0;top:0;width:0;height:0;margin:0;padding:0;background:none;text-indent:-99999px}
+
+.hideVn{position:absolute;top:-99999px;left:-99999px}
+.hideTn{font-size:0;line-height:0;text-indent:-99999px}
+iframe table textarea[readonly]{z-index:999999}
+/* Print */
+@media print{
+	body{text-align:left} 
+	#header{display:none}
+	.snb,.spot,.snbWrap{display:none}
+	#footer,#neighborhoodArea{display:none}
+	#neighborhoodAreaTitle{display:none;visibility:hidden}
+	#contents{width:710px;line-height:1.75em}
+	/*.tbl_Type01,.tbl_Type02,.tbl_Type03,.tbl_Type01 *,.tbl_Type02 *,.tbl_Type03 *{border-top:1px solid #555 !important;border-color:#555 !important}
+	.tbl_Type02,.tbl_Type02 *{border-top:2px solid #555 !important;border-color:#555 !important}*/
+	h6.tit_dep1{display:inline-block;height:30px;padding:0;margin:0 0 10px;border:2px solid #ef6a47;background:none !important;font-weight:bold;font-size:1.5em !important;line-height:1.5em !important;text-align:center;text-indent:0 !important}
+	#pop_contents h3.tit_dep2{display:inline-block;height:30px;padding:0;margin:0 0 10px;border:2px solid #ef6a47;background:none !important;font-weight:bold;font-size:1.5em !important;line-height:1.5em !important;text-align:center;text-indent:0 !important}
+	
+	
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <!-- 프로퍼티 설정 -->
+    <property name="LOG_PATH" value="./logs"/>
+
+    <!-- Console Logger -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>%d{HH:mm} %-5level %logger{36} - %msg%n</Pattern>
+        </layout>
+    </appender>
+
+    <!-- Rolling File Logger 
+    <appender name="FILE_LOGGER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+
+        <encoder>
+            <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - ${method} - %msg%n</Pattern>
+        </encoder>
+
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>warn</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+      
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/logback.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>60</maxHistory>
+        </rollingPolicy>
+    </appender>-->
+
+    <!-- 스프링 부트의 프로파일에 따른 로깅 전략 -->
+    <springProfile name="local">
+
+        <!-- 루트 경로의 로그 설정 -->
+        <root level="DEBUG">
+            <appender-ref ref="CONSOLE"/>
+        </root>
+
+        <!-- 특정 클래스의 로그 설정 (패키지로 설정하면 해당 패키지 범위의 클래스들로 로그 설정) 
+        <logger name="com.tmaxcloud.nacf" level="DEBUG">
+            <appender-ref ref="CONSOLE"/>
+        </logger>-->
+    </springProfile>
+    
+    <springProfile name="dev">
+
+        <!-- 루트 경로의 로그 설정 -->
+        <root level="DEBUG">
+            <appender-ref ref="CONSOLE"/>
+        </root>
+
+        <!-- 특정 클래스의 로그 설정 (패키지로 설정하면 해당 패키지 범위의 클래스들로 로그 설정) 
+        <logger name="com.tmaxcloud.nacf" level="DEBUG">
+            <appender-ref ref="CONSOLE"/>
+        </logger>-->
+    </springProfile>
+</configuration>

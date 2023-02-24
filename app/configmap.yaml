@@ -1,0 +1,89 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  creationTimestamp: '2022-08-18T05:16:47Z'
+  managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:data':
+          .: {}
+          'f:settings.xml': {}
+      manager: Mozilla
+      operation: Update
+      
+  name: custom-maven-settings-msa1
+  namespace: cicddemo
+data:
+  settings.xml: |
+    <?xml version="1.0" encoding="UTF-8"?>
+    <settings>
+
+    <pluginGroups>
+        <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
+    </pluginGroups>
+    <servers>
+       <server>
+         <id>releases</id>
+         <username>admin</username>
+         <password>tmax@23</password>
+       </server>>
+    </servers>
+    <activeProfiles>
+       <activeProfile>nexus</activeProfile>
+    </activeProfiles>
+    <profiles>
+          <profile>
+        <id>nexus</id>
+        <repositories>
+          <repository>
+            <id>cicddemo</id>
+            <url>http://nexus.222.122.51.186.nip.io/repository/cicddemo2/</url>
+            <releases>
+              <enabled>true</enabled>
+            </releases>
+            <snapshots>
+              <enabled>true</enabled>
+              <checksumPolicy>warn</checksumPolicy>
+            </snapshots>
+          </repository>
+        </repositories>
+        <pluginRepositories>
+          <pluginRepository>
+            <id>cicddemo</id>
+            <url>http://nexus.222.122.51.186.nip.io/repository/cicddemo2/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+              <enabled>true</enabled>
+              <checksumPolicy>warn</checksumPolicy>
+            </snapshots>
+          </pluginRepository>
+        </pluginRepositories>
+      </profile>
+      <profile>
+      <id>sonar</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+        <sonar.host.url>
+        http://sonarqube.222.122.51.186.nip.io/
+        </sonar.host.url>
+        <sonar.login>
+        admin
+        </sonar.login>
+        <sonar.password>
+        tmax@23
+        </sonar.password>               
+        <sonar.projectKey>
+        sgicmsa
+        </sonar.projectKey>
+        <sonar.projectName>
+        sgicmsa
+        </sonar.projectName>             
+      </properties>
+      </profile>
+    </profiles>
+    </settings>

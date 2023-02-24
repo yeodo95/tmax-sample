@@ -1,0 +1,58 @@
+
+.chatbot-start{
+    background:transparent;
+    border:none;
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    width:50px;
+    height:50px;
+    padding:0px;
+
+}
+.chatbot-start img{
+    
+    width:50px;
+    height:50px;
+}
+
+.chatbot-box{
+    width:362px;
+    height:617px;
+    position:fixed;
+    right:1px;
+    bottom:1px;
+    border:none;
+    overflow:hidden;
+    display:none;
+    
+}
+
+.chatbot-box .chatbot-frame{
+    border:1px solid #aaa;
+    width:360px;
+    height:615px;
+    top:615px;
+    position:absolute;
+    
+    
+}
+
+.chatbot-box .close{
+    position:absolute;
+    width:45px;
+    height:45px;
+    top:0px;
+    right:15px;
+    font-size: 28px;
+    background:transparent;
+    outline:none;
+    border:none;
+
+   
+}
+
+.chatbot-box .open{
+    top:625px;
+
+}

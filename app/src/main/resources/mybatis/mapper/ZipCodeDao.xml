@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tmaxcloud.sgic.dao.ZipCodeDao">
+    <select id="getZipCode" resultType="HashMap">
+    	<![CDATA[
+			select INPT_DT,
+			        CONCAT(substring(id,1,18),'...') as ID,
+			        ZIP_NO ,
+			        SIDO , 
+			        SIGUNGU , 
+			        EUPMYUN ,
+			        DORO 
+			from root1.ZIPCODE order by inpt_dt desc  limit 5
+		]]>        
+    </select>
+
+    <select id="setZipCode" parameterType="HashMap">
+    	<![CDATA[
+			insert into root1.ZIPCODE(ID,ZIP_NO,SIDO,SIGUNGU,EUPMYUN,DORO)
+			values (#{ID} , #{ZIP_NO}, #{SIDO}, #{SIGUNGU}, #{EUPMYUN}, #{DORO})		
+		]]>        
+    </select>
+        
+    <select id="setTestIns" parameterType="string">
+    	<![CDATA[
+			insert into INS_TT(id) values (#{id})
+		]]>        
+    </select>
+    
+    <select id="getIns_tt" resultType="HashMap">
+      <![CDATA[    
+			select 
+			CONCAT(substring(id,1,18),'...') as id ,
+			inpt_dt 
+			from root1.INS_TT
+			order by inpt_dt desc limit 5
+      ]]> 
+    </select>
+</mapper>

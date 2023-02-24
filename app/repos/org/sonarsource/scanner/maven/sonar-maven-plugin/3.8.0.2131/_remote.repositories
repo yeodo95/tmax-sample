@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Aug 18 22:22:24 KST 2022
+sonar-maven-plugin-3.8.0.2131.jar>central=
+sonar-maven-plugin-3.8.0.2131-sources.jar>central=
+sonar-maven-plugin-3.8.0.2131.pom>central=
