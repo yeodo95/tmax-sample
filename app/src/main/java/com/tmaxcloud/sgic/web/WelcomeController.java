@@ -28,7 +28,7 @@ public class WelcomeController {
 	
 	
 	
-    @RequestMapping("/cicddemo" ) 
+    @RequestMapping("/test" ) 
     public ModelAndView  welcome() throws Exception{ 
     	logger.debug("App 로그 로키에서 실시간으로 확인 가능");
     	ModelAndView mav = new ModelAndView();
